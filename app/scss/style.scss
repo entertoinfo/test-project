@@ -10,7 +10,7 @@
   margin-top: 21px;
 }
 
-.massages__inner {
+.messages__inner {
   float: right;
   width: 813px;
   margin-top: 35px;
@@ -64,10 +64,7 @@
   }
 
   &__list-link {
-    font-family: 'Circe-Regular';
-    color: #fff;
-    font-size: 16px;
-    line-height: 22px;
+    @extend %text-bold;
   }
 
 
@@ -81,14 +78,17 @@
   }
 
   &__list-link--bold {
-    font-family: 'Circe-Bold';
-    color: #fff;
-    font-size: 16px;
-    line-height: 22px;
+    @extend %text-bold;
   }
 }
 
-.massages {
+.messages {
+
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
 
   &__inner {
     font-family: 'Circe-Regular';
@@ -99,77 +99,205 @@
   &__top {
     display: flex;
     justify-content: space-between;
+    margin-bottom: 15px;
   }
 
-  &__control-remove a{
+  &__control-remove a {
     color: #FF5B5C;
     margin-right: 18px;
   }
 
-  &__control-archive a{
+  &__control-archive a {
     color: #fff;
   }
 
-  &__sections-unread a{
+  &__sections-unread a {
     color: #DB9351;
     margin-right: 18px;
   }
 
-  &__sections-archive a{
+  &__sections-archive a {
 
     color: #959595;
   }
 
   &__search {
-    border: 1px solid #DB9351;
-    outline: none;
-  }
-  &__search input{
-    color: #DB9351;
-    padding: 5px;
+    min-width: 170px;
+    height: 30px;
   }
 
-  &__search ::placeholder{
+  &__search form {
+    border: 1px solid #DB9351;
+
+  }
+
+  &__search input {
+    border: none;
+    outline: none;
+    background: transparent;
+    text-align: right;
+    padding: 5px 10px;
+    color: #DB9351;
+  }
+
+  &__search button {
+    height: 42px;
+    width: 42px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+  }
+
+  &__search::placeholder {
     color: #DB9351;
     text-align: right;
   }
 
+  &__search input::-webkit-input-placeholder {
+    color: #DB9351;
+  }
+
+  //checkbox
+  &__checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+
+  }
+
+  &__checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+
+  &__checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    margin-right: 19px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+    cursor: pointer;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии checked */
+  &__checkbox:checked+label::before {
+    border-color: #fff;
+    background-color: transparent;
+    background-image: url(../images/checkbox.svg);
+  }
+
+  /* стили при наведении курсора на checkbox */
+  &__checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #DB9351;
+  }
+
+  /* стили для активного чекбокса (при нажатии на него) */
+  &__checkbox:not(:disabled):active+label::before {
+    background-color: #DB9351;
+    border-color: #DB9351;
+  }
+
+  /* стили для чекбокса, находящегося в фокусе */
+  &__checkbox:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+
+  /* стили для чекбокса, находящегося в фокусе и не находящегося в состоянии checked */
+  &__checkbox:focus:not(:checked)+label::before {
+    border-color: #DB9351;
+  }
+
+  /* стили для чекбокса, находящегося в состоянии disabled */
+  &__checkbox:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+  //раздел входящих сообщений
+  &__list-item {
+    display: flex;
+    align-items: center;
+    font-family: 'Circe-Regular';
+    font-size: 16px;
+    line-height: 22px;
+    color: #959595;
+    border-top: 1px solid #212121;
+    border-bottom: 1px solid #212121;
+    transition: color .4s;
+  }
+
+  &__list-item:hover {
+    border-color: #DB9351;
+  }
+
+  &__list-name {
+    display: flex;
+    margin-right: 16px;
+    width: 160px;
+  }
+  
+  &__list-text{
+    width: 370px;
+  }
+
+  &__list-name p {
+    @extend %text-bold;
+    text-decoration: underline;
+    padding-right: 10px;
+  }
+
+  &__list-date {
+    display: flex;
+    font-size: inherit;
+    line-height: inherit;
+    color: inherit;
+    margin-left: 30px;
+  }
+
+  &__list-time {
+    margin-left: 20px;
+  }
+}
+.navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 50px;
+
+  &__btn{
+    font-family: 'Circe-Regular';
+    font-size: 14px;
+    line-height: 20px;
+    color: #fff;
+  }
+
+  &__btn:not(:last-child){
+    margin-right: 25px;
+  }
+
+  &__btn--active {
+    border: 1px solid #db9351;
+    border-radius: 60px;
+    color: #db9351;
+    padding: 3px 9px;
+  }
 }
 
 
+#menu{
+  display: none;
+}
+
+#toggle{
+  display: none;
+}
 
 
-
-
-
-
-
-// .d4 {background: #F15B42;}
-// .d4 form {
-//   background: #F9F0DA;
-//   border-bottom: 4px solid #be290e;
-// }
-// .d4 input, .d4 button {
-//   border: none;
-//   outline: none;
-//   background: transparent;
-// }
-// .d4 input {
-//   width: 100%;
-//   height: 42px;
-//   padding-left: 15px;
-// }
-// .d4 button {
-//   height: 42px;
-//   width: 42px;
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-//   cursor: pointer;
-// }
-// .d4 button:before {
-//   content: "\f178";
-//   font-family: FontAwesome;
-//   font-size: 20px;
-//   color: #be290e;
-// }
+@import'media';

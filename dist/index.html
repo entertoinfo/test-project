@@ -4,11 +4,14 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Test</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <header class="header">
+
+  </header>
   <div class="wrapper">
     <main class="main">
       <section class="sidebar">
@@ -29,26 +32,183 @@
               </ul>
             </nav>
           </div>
+          <!-- Меню для апаптива  -->
+          <div id="toggle">
+            <input type="checkbox">
+            <span></span>
+          </div>
+          
+          <div id="menu">
+            <!-- <div id="logo">Brand</div> -->
+            <ul>
+              <li>Сообщения</li>
+              <li>Профиль</li>
+              <li>Настройки</li>
+              <li>Вопросы</li>
+              <li>Написать модератору</li>
+              <li>Купить подписку</li>
+            </ul>
+          </div>
+      
         </div>
       </section>
       <section class="messages">
         <div class="container">
-          <div class="massages__inner">
-            <div class="massages__top">
-              <div class="massages__control">
-                <button class="massages__control-remove"><a href="#">Удалить</a></button>
-                <button class="massages__control-archive"><a href="#">Добавить в архив</a></button>
+          <div class="messages__inner">
+            <div class="messages__top">
+              <div class="messages__control">
+                <button class="messages__control-remove"><a href="#">Удалить</a></button>
+                <button class="messages__control-archive"><a href="#">Добавить в архив</a></button>
               </div>
-              <div class="massages__sections">
-                <button class="massages__sections-unread"><a href="#">Непрочитанные</a></button>
-                <button class="massages__sections-archive"><a href="#">Архив</a></button>
+              <div class="messages__sections">
+                <button class="messages__sections-unread"><a href="#">Непрочитанные</a></button>
+                <button class="messages__sections-archive"><a href="#">Архив</a></button>
               </div>
-              <div class="massages__search">
+              <div class="messages__search">
                 <form>
-                  <input type="search" placeholder="Искать →">
+                  <input type="text" placeholder="Искать →">
                 </form>
+                </div>
+            </div>
+           <div class="messages__list">
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-1" name="color-1" value="">
+              <label for="color-1"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-ofline.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Александр Анто…</p>
+               <img class="messages__list-buy" src="./images/bag.svg" alt="buy indicator">
+              </div>
+              <div class="messages__list-text">
+                <p>здравствуйте. как долго придется ждать нож кото</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">13/04/2018</p>
+                <p class="messages__list-time">14:02</p>
               </div>
             </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-2" name="color-2" value="indigo">
+              <label for="color-2"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-online.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Gun Machine</p>
+              </div>
+              <div class="messages__list-text">
+                <p>а почему на ноже нет ни одной царапины?</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">01/12/2018</p>
+                <p class="messages__list-time">00:14</p>
+              </div>
+            </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-3" name="color-3" value="indigo">
+              <label for="color-3"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-ofline.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Диана Павлова</p>
+              </div>
+              <div class="messages__list-text">
+                <p>нет, мне не нужно. если и вам тоже пофиг, то выб</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">13/04/2018</p>
+                <p class="messages__list-time">14:02</p>
+              </div>
+            </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-4" name="color-4" value="indigo">
+              <label for="color-4"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-online.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Otto Zweig</p>
+              </div>
+              <div class="messages__list-text">
+                <p>thank you!  that’s great!</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">01/12/2018</p>
+                <p class="messages__list-time">00:14</p>
+              </div>
+            </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-5" name="color-5" value="">
+              <label for="color-5"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-ofline.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Александр Анто…</p>
+               <img class="messages__list-buy" src="./images/bag.svg" alt="buy indicator">
+              </div>
+              <div class="messages__list-text">
+                <p>здравствуйте. как долго придется ждать нож кото</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">13/04/2018</p>
+                <p class="messages__list-time">14:02</p>
+              </div>
+            </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-6" name="color-6" value="indigo">
+              <label for="color-6"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-online.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Gun Machine</p>
+              </div>
+              <div class="messages__list-text">
+                <p>а почему на ноже нет ни одной царапины?</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">01/12/2018</p>
+                <p class="messages__list-time">00:14</p>
+              </div>
+            </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-7" name="color-7" value="indigo">
+              <label for="color-7"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-ofline.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Диана Павлова</p>
+              </div>
+              <div class="messages__list-text">
+                <p>нет, мне не нужно. если и вам тоже пофиг, то выб</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">13/04/2018</p>
+                <p class="messages__list-time">14:02</p>
+              </div>
+            </div>
+            <div class="messages__list-item">
+              <input class="messages__checkbox" type="checkbox" id="color-8" name="color-8" value="indigo">
+              <label for="color-8"></label>
+              <img class="messages__list-img--ofline" src="./images/avatar-img-online.png" alt="Sender's photo">
+              <div class="messages__list-name">
+               <p>Otto Zweig</p>
+              </div>
+              <div class="messages__list-text">
+                <p>thank you!  that’s great!</p>
+              </div>
+              <div class="messages__list-date">
+                <p class="messages__list-day">01/12/2018</p>
+                <p class="messages__list-time">00:14</p>
+              </div>
+            </div>
+           </div>
+           <div class="navigation">
+             <a class="navigation__btn" href="#">1</a>
+             <span class="navigation__btn navigation__btn--active">2</span>
+             <a class="navigation__btn" href="#">3</a>
+             <a class="navigation__btn" href="#">4</a>
+             <a class="navigation__btn" href="#">5</a>
+             <a class="navigation__btn" href="#">6</a>
+             <a class="navigation__btn" href="#">7</a>
+             <a class="navigation__btn" href="#">8</a>
+             <a class="navigation__btn" href="#">9</a>
+             <a class="navigation__btn" href="#">10</a>
+             <a class="navigation__btn" href="#">...</a>
+             <a class="navigation__btn" href="#">123</a>
+             <a class="navigation__btn" href="#"><img src="./images/array-right.svg" alt="array-right"></a>
+           </div>
           </div>
         </div>
       </section>
