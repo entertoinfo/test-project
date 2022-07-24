@@ -1,0 +1,175 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'libs';
+@import 'global';
+
+
+.sidebar__inner {
+  float: left;
+  margin-top: 21px;
+}
+
+.massages__inner {
+  float: right;
+  width: 813px;
+  margin-top: 35px;
+}
+
+.profile {
+
+  &__box span {
+    position: relative;
+    left: 20px;
+    top: 35px;
+  }
+
+  &__img {
+    border: 1px solid #DB9351;
+    width: 220px;
+  }
+
+}
+
+.menu {
+
+  width: 220px;
+
+  &__list {
+    background-color: #1D1C1C;
+  }
+
+  &__list-item {
+    padding-left: 30px;
+  }
+
+
+  &__list-item:nth-child(even) {
+    padding-top: 50px;
+    padding-bottom: 22px;
+    border-top: 1px solid #242424;
+  }
+
+  &__list-item:nth-child(odd) {
+    padding-bottom: 50px;
+  }
+
+
+  &__list-item:nth-child(5n + 1) {
+    padding: 50px 0 50px 30px;
+  }
+
+  &__list-item:nth-child(6) {
+    background-color: #DB9351;
+  }
+
+  &__list-link {
+    font-family: 'Circe-Regular';
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+
+  &__list-link span {
+    margin-left: 60px;
+  }
+
+  &__list-link--active {
+    font-family: 'Circe-Bold';
+    color: #DB9351;
+  }
+
+  &__list-link--bold {
+    font-family: 'Circe-Bold';
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.massages {
+
+  &__inner {
+    font-family: 'Circe-Regular';
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__control-remove a{
+    color: #FF5B5C;
+    margin-right: 18px;
+  }
+
+  &__control-archive a{
+    color: #fff;
+  }
+
+  &__sections-unread a{
+    color: #DB9351;
+    margin-right: 18px;
+  }
+
+  &__sections-archive a{
+
+    color: #959595;
+  }
+
+  &__search {
+    border: 1px solid #DB9351;
+    outline: none;
+  }
+  &__search input{
+    color: #DB9351;
+    padding: 5px;
+  }
+
+  &__search ::placeholder{
+    color: #DB9351;
+    text-align: right;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+// .d4 {background: #F15B42;}
+// .d4 form {
+//   background: #F9F0DA;
+//   border-bottom: 4px solid #be290e;
+// }
+// .d4 input, .d4 button {
+//   border: none;
+//   outline: none;
+//   background: transparent;
+// }
+// .d4 input {
+//   width: 100%;
+//   height: 42px;
+//   padding-left: 15px;
+// }
+// .d4 button {
+//   height: 42px;
+//   width: 42px;
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   cursor: pointer;
+// }
+// .d4 button:before {
+//   content: "\f178";
+//   font-family: FontAwesome;
+//   font-size: 20px;
+//   color: #be290e;
+// }

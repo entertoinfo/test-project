@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <main class="main">
+      <section class="sidebar">
+        <div class="container">
+          <div class="sidebar__inner">
+            <div class="profile__box">
+              <span><img src="./images/check-61.svg" alt=""></span>
+              <img class="profile__img" src="./images/profile-img.png" alt="Profile photo">
+            </div>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item"><a class="menu__list-link menu__list-link--active" href="#">Сообщения<span class="menu__list-span">3</span></a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Профиль</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Настройки</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Вопросы</a></li>
+                <li class="menu__list-item"><a class="menu__list-link" href="#">Написать модератору</a></li>
+                <li class="menu__list-item"><a class="menu__list-link--bold" href="#">Купить подписку</a></li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </section>
+      <section class="messages">
+        <div class="container">
+          <div class="massages__inner">
+            <div class="massages__top">
+              <div class="massages__control">
+                <button class="massages__control-remove"><a href="#">Удалить</a></button>
+                <button class="massages__control-archive"><a href="#">Добавить в архив</a></button>
+              </div>
+              <div class="massages__sections">
+                <button class="massages__sections-unread"><a href="#">Непрочитанные</a></button>
+                <button class="massages__sections-archive"><a href="#">Архив</a></button>
+              </div>
+              <div class="massages__search">
+                <form>
+                  <input type="search" placeholder="Искать →">
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer"></footer>
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>
