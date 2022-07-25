@@ -244,9 +244,28 @@
     width: 160px;
   }
 
+  &__list-name {
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
+
   &__list-text {
     width: 370px;
   }
+
+  &__list-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+  }
+
 
   &__list-name p {
     @extend %text-bold;

@@ -44,13 +44,18 @@
   }
 
   .messages__list-text {
-    width: 300px;
+    width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
   }
 }
 
 @media (max-width:660px){
   .messages__list-text {
-    width: 200px;
+    width: 150px;
 }
 }
 
@@ -79,6 +84,10 @@
   .messages__list-date{
     flex-direction: column;
   }
+  
+  .navigation{
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width:510px){
@@ -92,5 +101,40 @@
 
   .messages__list-item{
     padding: 10px 0;
+  }
+
+
+}
+
+@media (max-width:420px){
+  .messages__top{
+    display: block;
+  }
+
+  .messages__control{
+    margin-right: 0;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .messages__sections{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .messages__search{
+    margin: auto;
+  }
+}
+
+@media (max-width:390px){
+  .messages__list-text{
+    width: 100px;
+  }
+  .messages__list-name{
+    margin-right: 0;
+  }
+
+  .messages__list-date{
+    font-size: 14px;
   }
 }
