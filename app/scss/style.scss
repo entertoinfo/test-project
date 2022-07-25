@@ -122,7 +122,7 @@
   }
 
   &__search {
-    min-width: 170px;
+    width: 170px;
     height: 30px;
   }
 
@@ -138,6 +138,7 @@
     text-align: right;
     padding: 5px 10px;
     color: #DB9351;
+    width: 100%;
   }
 
   &__search button {
@@ -242,8 +243,8 @@
     margin-right: 16px;
     width: 160px;
   }
-  
-  &__list-text{
+
+  &__list-text {
     width: 370px;
   }
 
@@ -265,20 +266,21 @@
     margin-left: 20px;
   }
 }
+
 .navigation {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   margin-top: 50px;
 
-  &__btn{
+  &__btn {
     font-family: 'Circe-Regular';
     font-size: 14px;
     line-height: 20px;
     color: #fff;
   }
 
-  &__btn:not(:last-child){
+  &__btn:not(:last-child) {
     margin-right: 25px;
   }
 
@@ -291,11 +293,11 @@
 }
 
 
-#menu{
+#menu {
   display: none;
 }
 
-#toggle{
+#toggle {
   display: none;
 }
 

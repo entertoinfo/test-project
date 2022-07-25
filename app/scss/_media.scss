@@ -1,16 +1,96 @@
 @media (max-width:1130px) {
-  
 
-  .menu{
+
+  .menu {
     display: none;
   }
 
-  #toggle{
-    display: block;
-  }
-  #menu{
+  #toggle {
     display: block;
   }
 
+  #menu {
+    display: block;
+  }
 
+  .profile__img {
+    display: none;
+  }
+
+  .profile__box span {
+    display: none;
+  }
+
+  .messages__inner {
+    float: none;
+    margin: 0 auto;
+    padding-top: 50px;
+    width: 100%;
+  }
+
+  .messages__list-text {
+    width: 600px;
+    margin: 0 10px;
+  }
+
+  .messages__list-date {
+    margin-left: auto;
+  }
+}
+
+@media (max-width:850px) {
+  .messages__list-name {
+    width: 100px;
+  }
+
+  .messages__list-text {
+    width: 300px;
+  }
+}
+
+@media (max-width:660px){
+  .messages__list-text {
+    width: 200px;
+}
+}
+
+@media (max-width:600px){
+  .messages__top{
+    flex-wrap: wrap;
+  }
+
+  .messages__control{
+    margin-right: 25px;
+  }
+
+  .messages__control-remove a{
+    margin-right: 25px;
+  }
+
+  .messages__sections-unread a{
+    margin-right: 25px;
+  }
+
+  .messages__search{
+    margin-left: auto;
+    margin-top: 15px;
+  }
+
+  .messages__list-date{
+    flex-direction: column;
+  }
+}
+
+@media (max-width:510px){
+
+  .messages__list-img--ofline{
+    display: none;
+  }
+  .messages__list-img--online{
+    display: none;
+  }
+
+  .messages__list-item{
+    padding: 10px 0;
+  }
 }
